@@ -1,7 +1,7 @@
 {
   "name": "dnstls",
   "description": "DNS-over-TLS Command Line Tool",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Sagi Kedmi <git@sagi.io> (https://sagi.io)",
   "license": "MIT",
   "private": false,
