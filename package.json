@@ -17,7 +17,9 @@
     "coverage": "jest --coverage index.test.ts",
     "system:coverage": "jest --coverage index.system.test.ts",
     "tslint": "tslint ./src/index.ts",
-    "prettier:circleci": "prettier --list-different src/**/*.ts"
+    "prettier:base": "prettier",
+    "prettier:check": "yarn run prettier:base --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "yarn run prettier:base --write \"src/**/*.{ts,tsx}\""
   },
   "devDependencies": {
     "@types/jest": "^23.3.1",
