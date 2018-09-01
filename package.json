@@ -1,0 +1,37 @@
+{
+  "name": "dnstls",
+  "description": "DNS-over-TLS Command Line Tool",
+  "version": "0.0.1",
+  "author": "Sagi Kedmi <git@sagi.io> (https://sagi.io)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node lib/index.js",
+    "start:example": "node --no-warnings example/index.js",
+    "build": "tsc",
+    "test": "jest index.test.ts",
+    "system:test": "jest index.system.test.ts",
+    "coverage": "jest --coverage index.test.ts",
+    "system:coverage": "jest --coverage index.system.test.ts",
+    "tslint": "tslint ./src/index.ts",
+    "prettier:circleci": "prettier --list-different src/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.2",
+    "coveralls": "^3.0.2",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.5.0",
+    "jest-junit": "^5.1.0",
+    "prettier": "^1.14.2",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build && git add lib/"
+    }
+  }
+}
