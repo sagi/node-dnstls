@@ -5,6 +5,9 @@
   "author": "Sagi Kedmi <git@sagi.io> (https://sagi.io)",
   "license": "MIT",
   "private": false,
+  "bin": {
+    "dnstls": "./lib/index.js"
+  },
   "scripts": {
     "start": "node lib/index.js",
     "start:example": "node --no-warnings example/index.js",
@@ -33,5 +36,8 @@
     "hooks": {
       "pre-commit": "yarn build && git add lib/"
     }
+  },
+  "dependencies": {
+    "dns-over-tls": "^0.0.5"
   }
 }
