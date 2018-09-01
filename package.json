@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "bin": {
-    "dnstls": "./lib/index.js"
+    "dnstls": "./index.js"
   },
   "scripts": {
     "start": "node lib/index.js",
