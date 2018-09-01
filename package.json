@@ -19,6 +19,9 @@
     "prettier:check": "yarn run prettier:base --list-different \"src/**/*.{ts,tsx}\"",
     "prettier:write": "yarn run prettier:base --write \"src/**/*.{ts,tsx}\""
   },
+  "dependencies": {
+    "dns-over-tls": "^0.0.5"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "@types/node": "^10.9.2",
@@ -37,7 +40,9 @@
       "pre-commit": "yarn build && git add lib/"
     }
   },
-  "dependencies": {
-    "dns-over-tls": "^0.0.5"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagi/node-dnstls.git"
+  },
+  "keywords": ["dns-over-tls", "dns over tls", "dns", "tls", "dnstls", "security", "privacy"]
 }
