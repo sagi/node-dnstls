@@ -69,5 +69,6 @@ export const parse = (argv: string[]) => {
 (async () => {
   const options = parse(process.argv.splice(2));
   const r = await dnstls.query(options);
-  console.log(JSON.stringify(r, null, 2));
+  process.stdout.write(JSON.stringify(r, null, 2));
+  process.stdout.write('\n');
 })();
