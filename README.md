@@ -3,7 +3,7 @@
 [`dnstls`](https://www.npmjs.com/package/dnstls) is a Node.js [DNS over TLS](https://en.wikipedia.org/wiki/DNS_over_TLS) command line tool.
 
 [![CircleCI](https://circleci.com/gh/sagi/node-dnstls.svg?style=svg)](https://circleci.com/gh/sagi/node-dnstls)
-[![Coverage Status](https://coveralls.io/repos/github/sagi/node-dnstls/badge.svg?branch=master)](https://coveralls.io/github/sagi/nodestls?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/sagi/node-dnstls/badge.svg?branch=master)](https://coveralls.io/github/sagi/node-dnstls?branch=master)
 [![MIT License](https://img.shields.io/npm/l/dnstls.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![version](https://img.shields.io/npm/v/dnstls.svg?style=flat-square)](http://npm.im/dnstls)
 
