@@ -2,11 +2,17 @@
 
 DNS-over-TLS Command Line Tool.
 
+Installation:
+~~~
+$ npm i -g dnstls
+~~~
+
+Usage:
 ~~~
 Usage: dnstls name [type] [class] [@server] [-p<port>] [+tls-host=<host>]
 ~~~
 
-If only `name` (domain name) is provided, it defaults to using Cloudflare's DNS-overTLS servers
+If only `name` (domain name) is provided, it defaults to using Cloudflare's DNS-over-TLS server
 (`@1.1.1.1 +tls-host=cloudflare-dns.com`).
 
 ## Example
@@ -62,3 +68,6 @@ Output:
 ~~~
 
 Probably some time the future we'll add a `DiG`-like output.
+
+## License
+MIT
