@@ -7,7 +7,7 @@
 [![MIT License](https://img.shields.io/npm/l/dnstls.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![version](https://img.shields.io/npm/v/dnstls.svg?style=flat-square)](http://npm.im/dnstls)
 
-Installation:
+## Installation:
 ~~~
 $ npm i -g dnstls
 ~~~
