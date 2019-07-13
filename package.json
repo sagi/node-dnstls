@@ -1,7 +1,7 @@
 {
   "name": "dnstls",
   "description": "DNS-over-TLS Command Line Tool",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Sagi Kedmi <git@sagi.io> (https://sagi.io)",
   "license": "MIT",
   "private": false,
@@ -37,20 +37,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && git add lib/"
+      "pre-commit": "yarn build",
+      "pre-push": "yarn build && yarn test"
     }
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sagi/node-dnstls.git"
   },
-  "keywords": [
-    "dns-over-tls",
-    "dns over tls",
-    "dns",
-    "tls",
-    "dnstls",
-    "security",
-    "privacy"
-  ]
+  "keywords": ["dns-over-tls", "dns over tls", "dns", "tls", "dnstls", "security", "privacy"]
 }
