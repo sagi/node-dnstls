@@ -3,6 +3,7 @@
   "description": "DNS-over-TLS Command Line Tool",
   "version": "0.0.7",
   "author": "Sagi Kedmi <git@sagi.io> (https://sagi.io)",
+  "homepage": "https://sagi.io",
   "license": "MIT",
   "private": false,
   "bin": {
@@ -17,7 +18,8 @@
     "tslint": "tslint ./src/index.ts",
     "prettier:base": "prettier",
     "prettier:check": "yarn run prettier:base --list-different \"src/**/*.{ts,tsx}\"",
-    "prettier:write": "yarn run prettier:base --write \"src/**/*.{ts,tsx}\""
+    "prettier:write": "yarn run prettier:base --write \"src/**/*.{ts,tsx}\"",
+    "prepublish": "yarn build && yarn test"
   },
   "dependencies": {
     "dns-over-tls": "^0.0.8"
@@ -26,7 +28,6 @@
     "@types/jest": "^24.0.15",
     "@types/node": "^12.6.2",
     "coveralls": "^3.0.5",
-    "husky": "^3.0.0",
     "jest": "^24.8.0",
     "jest-junit": "^6.4.0",
     "prettier": "^1.18.2",
@@ -34,12 +35,6 @@
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn build",
-      "pre-push": "yarn build && yarn test"
-    }
   },
   "repository": {
     "type": "git",
