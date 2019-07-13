@@ -85,16 +85,19 @@ describe('dnstls tests', () => {
 
     const exit = jest.spyOn(process, 'exit');
     const write = jest.spyOn(process.stdout, 'write');
-    exit.mockImplementation(() => `doesn't matter`);
-    write.mockImplementation(() => `doesn't matter`);
+    exit.mockImplementation(() => {
+      throw new Error('exitted');
+    });
+    write.mockImplementation(() => true);
 
-    i.parse([]);
+    expect(() => i.parse([])).toThrowError();
     expect(exit).toHaveBeenCalledWith(0);
     expect(write).toHaveBeenCalled();
 
     exit.mockClear();
     write.mockClear();
-    i.parse(['-h']);
+
+    expect(() => i.parse(['-h'])).toThrowError();
     expect(exit).toHaveBeenCalledWith(0);
     expect(write).toHaveBeenCalled();
   });
